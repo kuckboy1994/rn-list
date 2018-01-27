@@ -41,7 +41,7 @@ export default class Main extends Component {
                 }} />
                 <View style={{ flex: 1 }}>
                     <FlatList
-                        ref={(flatList) => this._flatList = flatList}
+                        // ref={(flatList) => this._flatList = flatList}
                         // ListHeaderComponent={this._header}
                         // ListFooterComponent={this._footer}
                         ItemSeparatorComponent={this._separator}
@@ -57,9 +57,9 @@ export default class Main extends Component {
 
                         //horizontal={true}
 
-                        getItemLayout={(data, index) => (
-                            { length: 100, offset: (100 + 2) * index, index }
-                        )}
+                        // getItemLayout={(data, index) => (
+                        //     { length: 100, offset: (100 + 2) * index, index }
+                        // )}
 
                         data={data}>
                     </FlatList>
